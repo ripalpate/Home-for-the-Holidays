@@ -8,12 +8,24 @@ const navbarEvents = () => {
     console.log(e.target.id);
     if (e.target.id === 'navbar-button-logout') {
       firebase.auth().signOut().then(() => {
-        console.log('youlogged out');
+        $('#auth').show();
+        $('#friends').hide();
+        $('#holidays').hide();
       }).catch((err) => {
         console.error('you still logged in', err);
       });
+    } else if (e.target.id === 'navbar-button-holidays') {
+      $('#auth').hide();
+      $('#friends').hide();
+      $('#holidays').show();
+    } else if (e.target.id === 'navbar-button-friends') {
+      $('#auth').hide();
+      $('#friends').show();
+      $('#holidays').hide();
     } else {
-      console.log(e.target.id);
+      $('#auth').show();
+      $('#friends').hide();
+      $('#holidays').hide();
     }
   });
 };
@@ -32,7 +44,7 @@ const createNavbar = () => {
           <a class="nav-link" id="navbar-button-auth">Authentication</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="navbar-button-hoildays">Holidays</a>
+          <a class="nav-link" id="navbar-button-holidays">Holidays</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="navbar-button-friends">Friends</a>
