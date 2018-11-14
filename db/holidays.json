@@ -1,0 +1,32 @@
+{
+  "holidays": [
+    {
+    "name": "Thanksgiving",
+    "Date": "11/22/18",
+    "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
+    "location": "NSS",
+    "startTime": "11am"
+    },
+    {
+      "name": "Christmas",
+      "Date": "12/25/18",
+      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
+      "location": "2 East street, Nashville, TN 37209",
+      "startTime": "11am"
+    },
+    {
+      "name": "New Year",
+      "Date": "12/31/18",
+      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
+      "location": "15 Community st, Nashville, TN 37209",
+      "startTime": "6pm"
+    },
+    {
+      "name": "Eid",
+      "Date": "08/10/19",
+      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
+      "location": "NSS",
+      "startTime": "4pm"
+    }
+  ]
+}

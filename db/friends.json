@@ -1,0 +1,66 @@
+{
+  "friends" : [
+    {
+      "name": "Callan M.",
+      "address": "1 Main Street, Nashville, TN 37209",
+      "phoneNumber": "1112223333",
+      "email": "callan@yomamma.com",
+      "relationship": "sister from anotha mother",
+      "isAvoiding": true,
+      "uid": "1234"
+    },
+    {
+      "name": "Michelle B.",
+      "address": "1 Main Street, Nashville, TN 37209",
+      "phoneNumber": "1112223333",
+      "email": "michelle@yomamma.com",
+      "relationship": "sister from anotha mother",
+      "isAvoiding": false,
+      "uid": "5564"
+    },
+    {
+      "name": "Jasmine W.",
+      "address": "1 Main Street, Nashville, TN 37209",
+      "phoneNumber": "1112223333",
+      "email": "jasmine@yomamma.com",
+      "relationship": "sister from anotha mother",
+      "isAvoiding": false,
+      "uid": "1224"
+    },
+    {
+      "name": "Feven M.",
+      "address": "1 Main Street, Nashville, TN 37209",
+      "phoneNumber": "1112223333",
+      "email": "feven@yomamma.com",
+      "relationship": "sister from anotha mother",
+      "isAvoiding": false,
+      "uid": "1233"
+    },{
+      "name": "Hetal P.",
+      "address": "1 Main Street, Nashville, TN 37209",
+      "phoneNumber": "1112223333",
+      "email": "hp@redone.com",
+      "relationship": "sister",
+      "isAvoiding": false,
+      "uid": "5678"
+    },
+    {
+      "name": "Tarkik P.",
+      "address": "1 Main Street, Nashville, TN 37209",
+      "phoneNumber": "1112223333",
+      "email": "tp@yoyo.com",
+      "relationship": "brother",
+      "isAvoiding": false,
+      "uid": "7891"
+    },
+    {
+      "name": "Krupa S.",
+      "address": "1 Main Street, Nashville, TN 37209",
+      "phoneNumber": "1112223333",
+      "email": "kyupa@yomamma.com",
+      "relationship": "school friend",
+      "isAvoiding": true,
+      "uid": "6543"
+    }
+]
+}

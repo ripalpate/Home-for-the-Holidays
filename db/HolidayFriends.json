@@ -1,0 +1,65 @@
+{
+  "holidayFriends" : 
+  [
+    {
+      "holidayId": "holiday1",
+      "friendId": "friend1"
+    },
+    {
+      "holidayId": "holiday1",
+      "friendId": "friend2"
+    },
+    {
+      "holidayId": "holiday1",
+      "friendId": "friend3"
+    },
+    {
+      "holidayId": "holiday1",
+      "friendId": "friend4"
+    },
+    {
+      "holidayId": "holiday2",
+      "friendId": "friend2"
+    },
+    {
+      "holidayId": "holiday2",
+      "friendId": "friend3"
+    },
+    {
+      "holidayId": "holiday2",
+      "friendId": "friend4"
+    },
+    {
+      "holidayId": "holiday2",
+      "friendId": "friend5"
+    },
+    {
+      "holidayId": "holiday2",
+      "friendId": "friend6"
+    },
+    {
+      "holidayId": "holiday3",
+      "friendId": "friend3"
+    },
+    {
+      "holidayId": "holiday3",
+      "friendId": "friend4"
+    },
+    {
+      "holidayId": "holiday3",
+      "friendId": "friend5"
+    },
+    {
+      "holidayId": "holiday3",
+      "friendId": "friend2"
+    },
+    {
+      "holidayId": "holiday4",
+      "friendId": "friend1"
+    },
+    {
+      "holidayId": "holiday4",
+      "friendId": "friend7"
+    }
+  ]
+}
