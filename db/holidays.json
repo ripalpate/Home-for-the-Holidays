@@ -1,36 +1,27 @@
 {
-  "holidays": [
-    {
-    "id": "holiday1",
-    "name": "Thanksgiving",
-    "Date": "11/22/18",
-    "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
-    "location": "NSS",
-    "startTime": "11am"
+   "holiday1": {
+      "name": "Thanksgiving",
+      "Date": "11/22/18",
+      "imageUrl": "http://www.todayifoundout.com/wp-content/uploads/2017/11/thanksgiving-turkey-640x427.png",
+      "location": "NSS",
+      "startTime": "11am",
+      "uid":"12345"
+
     },
-    {
-      "id": "holiday2",
+    "holiday2": {
       "name": "Christmas",
       "Date": "12/25/18",
       "imageUrl": "http://blog.goeventz.com/wp-content/uploads/2016/12/merry.jpg",
       "location": "2 East street, Nashville, TN 37209",
-      "startTime": "11am"
+      "startTime": "11am",
+      "uid":"12345"
     },
-    {
-      "id": "holiday3",
+    "holiday3": {
       "name": "Diwali",
       "Date": "10/27/19",
       "imageUrl": "https://i.ndtvimg.com/i/2015-11/diwali_625x350_61447136113.jpg",
       "location": "15 Community st, Nashville, TN 37209",
-      "startTime": "6pm"
-    },
-    {
-      "id": "holiday4",
-      "name": "Hanukkah",
-      "Date": "12/02/18",
-      "imageUrl": "https://bethelbalto.com/sites/default/files/field/event/img_3177.jpg",
-      "location": "NSS",
-      "startTime": "4pm"
+      "startTime": "6pm",
+      "uid":"67890"
     }
-  ]
 }
