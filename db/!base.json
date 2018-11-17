@@ -1,0 +1,11 @@
+{
+  "friends": {
+    "callan": "morrision"
+  },
+  "holidays": {
+    "name" : "thanksgiving"
+  },
+  "holidayFriends": {
+    "holidayId" : "1"
+  }
+}
