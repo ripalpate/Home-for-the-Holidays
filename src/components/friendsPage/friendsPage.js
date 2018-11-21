@@ -11,6 +11,7 @@ const printSingleFriend = (friend) => {
     <p>${friend.email}</p>
     <p>${friend.phoneNumber}</p>
     <button class="btn btn-danger delete-button" data-delete-id=${friend.id}>X</button>
+    <button class="btn btn-info edit-button" data-edit-id=${friend.id}>Edit</button>
   </div>
   `;
   $('#single-container').html(friendString);
