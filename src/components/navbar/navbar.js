@@ -22,6 +22,7 @@ const navbarEvents = () => {
       $('#auth').hide();
       $('#friends').show();
       $('#holidays').hide();
+      $('#add-edit-friend').html('').hide();
     } else {
       $('#auth').show();
       $('#friends').hide();
