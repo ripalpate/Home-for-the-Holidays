@@ -78,7 +78,7 @@ const showEditForm = (e) => {
     .then((singleFriend) => {
       let domString = '<h2> Edit Friend</h2>';
       domString += formBuilder(singleFriend);
-      domString += '<button id="edit-friend">Save Friend</button>';
+      domString += `<button id="edit-friend" data-single-edit-id=${singleFriend.id}>Save Friend</button>`;
       $('#add-edit-friend').html(domString).show();
       $('#friends').hide();
     }).catch((error) => {
@@ -86,7 +86,20 @@ const showEditForm = (e) => {
     });
 };
 
+const updateFriend = (e) => {
+  const updatedFriend = gettingFriendFromForm();
+  const friendId = e.target.dataset.singleEditId;
+  friendsData.updateFriend(updatedFriend, friendId)
+    .then(() => {
+      $('#add-edit-friend').html('').hide();
+      $('#single-container').html('');
+      $('#friends').show();
+      initializeFriendsPage();
+    }).catch((error) => {
+      console.error(error);
+    });
+};
 $('body').on('click', '#add-friend', addNewFriend);
 $('body').on('click', '.edit-button', showEditForm);
-
+$('body').on('click', '#edit-friend', updateFriend);
 export default buildAddForm;
