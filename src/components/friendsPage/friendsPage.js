@@ -1,8 +1,18 @@
 import $ from 'jquery';
 import authHelpers from '../../helpers/authHelpers';
 import friendsData from '../../helpers/data/friendsData';
+import holidayFriendsData from '../../helpers/data/holidayFriendsData';
+import holidaysData from '../../helpers/data/holidaysData';
 
-const printSingleFriend = (friend) => {
+const holidyStringBuilder = (holidays) => {
+  let holidayString = '<h3>Holidays:</h3>';
+  holidays.forEach((holiday) => {
+    holidayString += `<h5>${holiday.name} ${holiday.Date}</h5>`;
+  });
+  return holidayString;
+};
+
+const printSingleFriend = (friend, holidays) => {
   const friendString = `
   <div>
     <h1>${friend.name}</h1>
@@ -12,6 +22,7 @@ const printSingleFriend = (friend) => {
     <p>${friend.phoneNumber}</p>
     <button class="btn btn-danger delete-button" data-delete-id=${friend.id}>X</button>
     <button class="btn btn-info edit-button" data-edit-id=${friend.id}>Edit</button>
+    <div class="holiday-container">${holidyStringBuilder(holidays)}</div>
   </div>
   `;
   $('#single-container').html(friendString);
@@ -22,9 +33,19 @@ const getSingleFriend = (e) => {
   const friendId = e.target.dataset.dropdownId;
   // dataset.dropdownID-comes from data-dropdown-id. you have to write in camlecase instead of dash
   // console.log(friendId);
+  const uid = authHelpers.getCurrentUid();
   friendsData.getSingleFriend(friendId)
     .then((singleFriend) => {
-      printSingleFriend(singleFriend);
+      holidayFriendsData.getHolidayIdsForFriend(friendId)
+        .then((holidayIds) => {
+          // console.log(holidayIds);
+          holidaysData.getHolidaysByArrayOfIds(uid, holidayIds)
+            .then((holidays) => {
+              printSingleFriend(singleFriend, holidays);
+            });
+        });
+    // const holidayIds = ['holiday1', 'holiday2'];
+    // const holidays = ['a', 'b', 'c'];
     }).catch((error) => {
       console.error('error in getting friend', error);
     });
