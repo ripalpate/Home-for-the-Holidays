@@ -100,6 +100,7 @@ const deleteFriend = (e) => {
 const updateIsAvoiding = (e) => {
   const friendId = e.target.id;
   const isAvoiding = e.target.checked;
+  console.log(isAvoiding);
   friendsData.updateIsAvoiding(friendId, isAvoiding)
     .then(() => {
 
@@ -107,7 +108,6 @@ const updateIsAvoiding = (e) => {
     .catch((err) => {
       console.error(err);
     });
-  console.log('you click');
 };
 const bindEvents = () => {
   $('body').on('click', '.get-single', getSingleFriend);
