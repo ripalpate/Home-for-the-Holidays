@@ -8,6 +8,7 @@ const getHolidaysByArrayOfIds = (uid, holidayIdsArray) => new Promise((resolve, 
     .then((result) => {
       // console.log(holidayIdsArray);
       const holidaysObject = result.data;
+      // console.log(holidaysObject);
       const holidaysArray = [];
       if (holidaysObject !== null) {
         Object.keys(holidaysObject).forEach((holidayId) => {
